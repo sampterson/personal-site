@@ -3,10 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sup Wassup</title>
+    <title>Sam Peterson - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f9fa;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            border-radius: 8px;
+            padding: 32px 28px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 0.2em;
+        }
+        .contact {
+            font-size: 1em;
+            margin-bottom: 1.5em;
+            color: #555;
+        }
+        .contact a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+        .section-title {
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            font-size: 1.2em;
+            color: #005a9c;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 2px;
+        }
+        .role {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 1.2em;
+        }
+        .company {
+            color: #444;
+            font-size: 1em;
+        }
+        .date {
+            float: right;
+            color: #888;
+            font-size: 0.95em;
+        }
+        ul {
+            margin-top: 0.5em;
+            margin-bottom: 1em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        .education {
+            margin-top: 1.5em;
+        }
+        .skills {
+            margin-bottom: 1em;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 16px 6px; }
+            h1 { font-size: 1.4em; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to future home of Sam's Resume</h1>
-    <p>There will be some great things here soon!</p>
+    <div class="container">
+        <h1>Sam Peterson</h1>
+        <div class="contact">
+            Greater Seattle, WA &nbsp;|&nbsp; 
+            <a href="mailto:peterson.sam.j12@gmail.com">peterson.sam.j12@gmail.com</a> &nbsp;|&nbsp; 
+            <a href="tel:5073823477">507.382.3477</a> &nbsp;|&nbsp; 
+            <a href="https://www.linkedin.com/in/sampterson/" target="_blank">LinkedIn</a>
+        </div>
+        <p>
+            Senior software engineer with 8 years of experience in software design and delivering scalable technical solutions in cloud services. Proven ability to drive new product development and improve system efficiency to directly impact business growth and revenue.
+        </p>
+
+        <div class="section-title">Software Engineering Core Competencies</div>
+        <div class="skills">
+            <strong>Skills:</strong> TypeScript, Node.js, React, GCP, AWS, CI/CD, Bitbucket, Infrastructure as Code, Pulumi, NoSQL, Postgres, NoSql
+        </div>
+
+        <div class="section-title">Professional Work Experience</div>
+
+        <div class="role">Lead Software Architect <span class="date">Apr 2024 - Present</span></div>
+        <div class="company">LevelTen Energy</div>
+        <ul>
+            <li>Led team of three to drive engineering efficiency during rapid growth by implementing weekly technical design reviews, reducing average project lead time by up to a month.</li>
+            <li>Drove platform expansion from concept to initial design by leading cross-functional workshops, ensuring technical and business alignment during accelerated expansion.</li>
+            <li>Transformed the authorization system by architecting and implementing a JWT-based solution that migrated siloed user data into Okta, streamlining service additions and reducing maintenance overhead.</li>
+            <li>Authored the Technical Design Document and contributed NodeJS code for a new Companies REST API, enabling other microservices to safely and efficiently consume centralized company and user data.</li>
+        </ul>
+
+        <div class="role">Senior Software Engineer <span class="date">Jan 2023 - Apr 2024</span></div>
+        <div class="company">LevelTen Energy</div>
+        <ul>
+            <li>Led the technical roadmap and hands-on implementation for a team of five, designing an Express REST API and delivering a new energy pricing application in 4 months to drive daily active users and recurring subscription revenue.</li>
+            <li>Transformed the deployment process by creating automated Bitbucket pipelines leveraging Pulumi Infrastructure as Code, reducing deployment time by 66% and enabling continuous, mid-day releases.</li>
+            <li>Drove cross-functional alignment with product teams to scope and implement an external API, creating a new subscription product to integrate with our data.</li>
+        </ul>
+
+        <div class="role">Engineering Manager <span class="date">Sep 2022 - Jan 2023</span></div>
+        <div class="company">Pariveda Solutions</div>
+        <ul>
+            <li>Designed and delivered regular backend feature releases of a GraphQl API through 2-week sprints, enabling distributed front end team’s concurrent development on a health care patient portal website redesign.</li>
+            <li>Partnered with key stakeholders to capture business requirements, translating them into detailed user stories and epics that established a five-month project backlog and technical roadmap.</li>
+            <li>Authored application architecture and provided technical mentorship for a five-person team, guiding them in the implementation of GraphQL and AWS resources to deliver the patient portal.</li>
+        </ul>
+
+        <div class="role">Senior Software Engineer <span class="date">Mar 2020 - Sep 2022</span></div>
+        <div class="company">Pariveda Solutions</div>
+        <ul>
+            <li>Lead front end developer for user-centered designed React application, enabling four Seattle agencies to efficiently coordinate emergency traffic response.</li>
+            <li>Scaled Redux state management system to handle concurrent user updates, map annotations, web socket connections, and admin portal to backend REST API.</li>
+            <li>Engineered a real-time event feed by ingesting raw data from various traffic agencies via AWS S3 and Kinesis, normalizing disparate feeds into a standard DynamoDB schema to power the React application.</li>
+            <li>Mentored junior developers by writing and prioritizing front end stories for them to implement while coaching their technical execution.</li>
+        </ul>
+
+        <div class="section-title education">Education</div>
+        <div>
+            <strong>Hamline University</strong> &mdash; Graduated May 2016<br>
+            Bachelor of Science; Physics, Summa Cum Laude<br>
+            Minor; Computer Science, Summa Cum Laude
+        </div>
+    </div>
 </body>
 </html>
